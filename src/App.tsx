@@ -138,7 +138,8 @@ const AuthenticatedRoute = ({ children }: { children: React.ReactNode }) => {
 };
 
 function App() {
-  
+  useConnectionListener();
+  useEventRegistrationListener();
   return (
     
     <HomepageProvider>
